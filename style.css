@@ -1,0 +1,55 @@
+body {
+	font-family: 'Lato', sans-serif;
+}
+
+#landing {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+   
+    background-image: url(imgs/bg-landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#main {
+    margin: 40px
+}
+
+.btn {
+  
+}
+
+.btn-primary {
+    padding: 1.25rem 2rem;
+    color: white;
+    font-size: 100%;
+    text-transform: uppercase;
+    letter-spacing: .15rem;
+    background-color: transparent;
+    border: 2px solid white;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    color: #e13f2b;
+    background-color: white;
+    border: 2px solid #e13f2b;
+}
+
+.btn-primary:focus {
+  background-color: white;
+  color: dimgrey;
+}
+
+.btn-primary:active {
+  background-color: grey !important;
+}
+
+.container-main {
+    margin: 10px;
+}
