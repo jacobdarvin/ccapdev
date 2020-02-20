@@ -18,9 +18,6 @@ body {
     margin: 40px;
 }
 
-.btn {
-  
-}
 
 .btn-primary {
     padding: 1.25rem 2rem;
@@ -55,3 +52,5 @@ body {
 html {
     scroll-behavior: smooth;
 }
+
+/* Sign-Up CSS */
