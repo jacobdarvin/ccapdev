@@ -2,10 +2,53 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
+p {
+    font-family: 'Lato';
+    font-size: 1rem;
+    
+}
+
+.finish {
+    
+}
+
+.divider {
+    width: 20px;
+}
+
+.container-custom{
+    margin-top: 100px;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-bottom: 100px;
+}
+
+
+.card {
+    padding: 15px;
+    border: 0 !important;
+    border-radius: 10px;
+}
+
+h1 {
+    color: #4b4b4b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.text-side {
+    padding-left: 30px;
+}
+
+nav {
+    box-shadow: 0px 0px 20px grey;
+}
+
 #landing {
-    margin-top: 80px;
-    max-height: 38rem;
-    padding: 5rem;
+    margin-top: 76px;
+    min-height: 100px;
+    
+    padding: 13rem;
    
     background-image: url(imgs/bg-landing.jpg);
     background-position: center;
@@ -15,7 +58,7 @@ body {
 }
 
 #main {
-    margin: 40px;
+    background-color: #fafafa;
 }
 
 .btn {
@@ -50,6 +93,14 @@ body {
 
 .container-main {
     margin: 10px;
+}
+
+.container-story {
+    margin: 10px;
+}
+
+.finish {
+    background-color: #d34b3b;
 }
 
 html {
