@@ -38,9 +38,8 @@ function onSignupSubmitClick() {
     if(!emailIsCorrect()) {
         alert("Invalid email!");
         return;
-    }
-
-    alert("hail satan");
+	}
+	
     signUpForms.submit();
 }
 
