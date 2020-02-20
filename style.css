@@ -37,13 +37,13 @@ body {
 }
 
 .btn-primary:focus {
-  background-color: white;
-  color: dimgrey;
-}
+    background-color: white;
+    color: dimgrey;
+  }
 
 .btn-primary:active {
-  background-color: grey !important;
-}
+    background-color: grey !important;
+  }
 
 .container-main {
     margin: 10px;
@@ -54,3 +54,55 @@ html {
 }
 
 /* Sign-Up CSS */
+.container-fluid{
+    padding: 0px;
+}
+
+
+.cat-image{
+    position: relative;
+    height: inherit;
+}
+
+.left-image{
+    background-image: url("imgs/signup-cat.jpg");
+    animation: fadeInAnimation ease 3s ;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+}
+
+.red-sign-up{
+    float: left;
+    position: absolute;
+    z-index: 1000;
+    color: white;
+    padding-top: 560px;
+    padding-left: 40px;
+}
+
+#hello-friend{
+    font-size: 80px;
+}
+
+.form-wrapper{
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.entry-forms{
+    padding-top: 32px;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
