@@ -3,11 +3,9 @@ body {
 }
 
 #landing {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 35rem;
-    padding: 15rem 0;
+    margin-top: 80px;
+    max-height: 38rem;
+    padding: 5rem;
    
     background-image: url(imgs/bg-landing.jpg);
     background-position: center;
@@ -17,7 +15,7 @@ body {
 }
 
 #main {
-    margin: 40px
+    margin: 40px;
 }
 
 .btn {
@@ -52,4 +50,8 @@ body {
 
 .container-main {
     margin: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
 }
