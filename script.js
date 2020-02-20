@@ -18,7 +18,7 @@ switch(x) {
 //=========================================================================================
 
 function onSignupSubmitClick() {
-	var signUpForms = document.getElementById("signUpForms");
+	var entryForms = document.getElementById("entry-forms");
 
 	if (!formsAreComplete()) {
         alert("Required fields!");
@@ -40,7 +40,7 @@ function onSignupSubmitClick() {
         return;
 	}
 	
-    signUpForms.submit();
+    entryForms.submit();
 }
 
 function emailIsCorrect(){
