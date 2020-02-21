@@ -136,6 +136,9 @@ html {
 
 #hello-friend{
     font-size: 80px;
+    color: white;
+    font-weight: bold;
+    font-family: lato;
 }
 
 .form-wrapper{
