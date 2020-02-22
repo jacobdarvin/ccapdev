@@ -55,6 +55,10 @@ h1 {
     font-family: Raleway;
 }
 
+.big {
+    font-weight: bold; font-size: 56px; font-family: Raleway; font-weight:black; color: #d34b3b;
+}
+
 .text-side {
     padding-left: 30px;
 }
