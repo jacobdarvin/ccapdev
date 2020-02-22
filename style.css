@@ -5,15 +5,32 @@ body {
 p {
     font-family: 'Lato';
     font-size: 1rem;
-    
 }
 
 .divider {
     width: 20px;
 }
 
+.card-title {
+    color: #d34b3b !important;
+    font-weight: 700 !important;
+    text-align: center;
+    padding: 0;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card-text {
+    color: #212529 !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
 .container-custom{
-    margin-top: 100px;
     margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 100px;
@@ -21,15 +38,15 @@ p {
 
 
 .card {
-    padding: 15px;
     border: 0 !important;
     border-radius: 10px;
 }
 
 h1 {
     color: #4b4b4b;
-    font-weight: bold;
+    font-weight: 900;
     margin-bottom: 15px;
+    font-family: Raleway;
 }
 
 .text-side {
@@ -47,6 +64,20 @@ nav {
     padding: 13rem;
    
     background-image: url(imgs/bg-landing.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+#landing-feed {
+    margin-top: 76px;
+    min-height: 100px;
+    
+    padding: 13rem;
+   
+    background-image: url(imgs/bg-feed.jpg);
+    background-color: #fafafa; 
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -155,4 +186,8 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#feed-landing{
+    
 }
