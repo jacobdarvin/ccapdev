@@ -20,18 +20,20 @@
     <body>
         <div class="container-fluid float-right">
             <div clas="row">
-                <!--<div class="col col-md-6">-->
+                <div class="col col-6 d-sm-none d-md-block">
                     <div class="red-sign-up">
-                        <h1 id="hello-friend"><b>Hello, friend!</b></h1>
+                        <h1 id="hello-friend"><b>Hewwo, meow!</b></h1>
                         <p>Already have an account?</p>
                         <button type="button" class="btn btn-danger"><b>LOG-IN</b></button>
                     </div>
-                    <div class="left-image"></div>
                 </div>
-                <div class="col col-md-6 float-right form-wrapper">
-                    <img src='imgs/it.png' width="100px">
-                    <span style="font-weight: bold; font-size: 62pt; padding-left: 10px;">Sign-Up</span>
-                    <form class="entry-forms" id="entry-forms">
+                <div class="left-image-signup"></div>
+                <div class="col col-6 float-right form-wrapper-signup">
+                    <div class="flex-container">
+                    <img src='imgs/it.png' width="140px">
+                    <p id="sign-up-text">Sign-Up</p>
+                    </div>
+                    <form class="entry-forms">
                             <div class="form-group">
                                 <label for="userName">User Name</label>
                                 <input type="userName" class="form-control" id="userName" placeholder="Enter User Name">
@@ -48,13 +50,13 @@
                             </div>
                             <div class="form-group">
                                 <label for="confirmPassword">Confirm Password</label>
-                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm Password">
+                                <input type="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm Password">
                             </div>
                             <div class="form-group">
                                 <label for="description">Description</label>
                                 <textarea class="form-control" id="description" rows="3" placeholder="Give other users a short description of yourself!"></textarea>
                             </div>
-                            <button type="button" class="btn btn-outline-danger" onclick="onSignupSubmitClick()"><b>S U B M I T</b></button>
+                            <button type="button" class="btn btn-outline-danger"><b>S U B M I T</b></button>
                     </form>   
                 </div>
             </div>

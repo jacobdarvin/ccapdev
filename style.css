@@ -58,13 +58,7 @@ html {
     padding: 0px;
 }
 
-
-.cat-image{
-    position: relative;
-    height: inherit;
-}
-
-.left-image{
+.left-image-signup{
     background-image: url("imgs/signup-cat.jpg");
     animation: fadeInAnimation ease 3s ;
     animation-iteration-count: 1; 
@@ -79,7 +73,6 @@ html {
 }
 
 .red-sign-up{
-    float: left;
     position: absolute;
     z-index: 1000;
     color: white;
@@ -91,7 +84,17 @@ html {
     font-size: 80px;
 }
 
-.form-wrapper{
+.flex-container{
+    display: flex;
+}
+
+#sign-up-text{
+    font-weight: bold; 
+    font-size: 64pt; 
+    padding-left: 8px;
+}
+
+.form-wrapper-signup{
     padding-top: 32px;
     padding-left: 16px;
     padding-right: 16px;
@@ -105,4 +108,26 @@ html {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Log In */
+
+.left-image-login{
+    background-image: url("imgs/login-cat.jpg");
+    animation: fadeInAnimation ease 3s ;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+}
+
+.form-wrapper-login{
+    padding-top: 172px;
+    padding-left: 16px;
+    padding-right: 16px;
 }
