@@ -19,6 +19,13 @@ p {
     padding: 0;
 }
 
+.card-title-custom {
+    font-family: Raleway !important;
+    color: #d34b3b !important;
+    font-weight: 900 !important;
+    padding: 0;
+}
+
 .card-img-top {
     width: 100%;
 }
@@ -198,6 +205,14 @@ html {
     margin-right: auto;
 }
 
-#feed-landing{
-    
+hr{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.feed-container {
+    align-self: center;
+    margin-top: 7em;
+    margin-right: 10em;
+    margin-left: 10em;
 }
