@@ -24,7 +24,7 @@
                     <div class="red-sign-up">
                         <h1 id="hello-friend"><b>Hewwo, meow!</b></h1>
                         <p>Already have an account?</p>
-                        <button type="button" class="btn btn-danger"><b>LOG-IN</b></button>
+                        <a href="log-in.html"><button type="button" class="btn btn-danger"><b>LOG-IN</b></button></a>
                     </div>
                 </div>
                 <div class="left-image-signup"></div>
@@ -33,7 +33,7 @@
                     <img src='imgs/it.png' width="140px">
                     <p id="sign-up-text">Sign-Up</p>
                     </div>
-                    <form class="entry-forms">
+                    <form class="entry-forms" id="signup-forms">
                             <div class="form-group">
                                 <label for="userName">User Name</label>
                                 <input type="userName" class="form-control" id="userName" placeholder="Enter User Name">
@@ -56,7 +56,7 @@
                                 <label for="description">Description</label>
                                 <textarea class="form-control" id="description" rows="3" placeholder="Give other users a short description of yourself!"></textarea>
                             </div>
-                            <button onclick="onSignupSubmitClick()" type="button" class="btn btn-outline-danger"><b>S U B M I T</b></button>
+                            <button type="button" class="btn btn-outline-danger" onclick="onSignupSubmitClick()"><b>S U B M I T</b></button>
                     </form>   
                 </div>
             </div>
