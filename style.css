@@ -2,76 +2,10 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-p {
-    font-family: 'Lato';
-    font-size: 1rem;
-    text-align: justify;
-}
-
-.divider {
-    width: 20px;
-}
-
-.card-title {
-    color: #d34b3b !important;
-    font-weight: 700 !important;
-    text-align: center;
-    padding: 0;
-}
-
-.card-img-top {
-    width: 100%;
-}
-
-.card-text {
-    color: #212529 !important;
-}
-
-a {
-    text-decoration: none !important;
-}
-
-.container-custom{
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 100px;
-}
-
-
-.card {
-    border: 0 !important;
-    border-radius: 10px;
-}
-
-.col-sm{
-    padding: 0px !important;
-    width: 35%;
-}
-
-h1 {
-    color: #4b4b4b;
-    font-weight: 900;
-    margin-bottom: 15px;
-    font-family: Raleway;
-}
-
-.big {
-    font-weight: bold; font-size: 56px; font-family: Raleway; font-weight:black; color: #d34b3b;
-}
-
-.text-side {
-    padding-left: 30px;
-}
-
-nav {
-    box-shadow: 0px 0px 20px grey;
-}
-
 #landing {
-    margin-top: 76px;
-    min-height: 100px;
-    
-    padding: 13rem;
+    margin-top: 80px;
+    max-height: 38rem;
+    padding: 5rem;
    
     background-image: url(imgs/bg-landing.jpg);
     background-position: center;
@@ -80,22 +14,8 @@ nav {
     background-size: cover;
 }
 
-#landing-feed {
-    margin-top: 76px;
-    min-height: 100px;
-    
-    padding: 13rem;
-   
-    background-image: url(imgs/bg-feed.jpg);
-    background-color: #fafafa; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
-}
-
 #main {
-    background-color: #fafafa;
+    margin: 40px;
 }
 
 
@@ -129,14 +49,6 @@ nav {
     margin: 10px;
 }
 
-.container-story {
-    margin: 10px;
-}
-
-.finish {
-    background-color: #d34b3b;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -146,13 +58,7 @@ html {
     padding: 0px;
 }
 
-
-.cat-image{
-    position: relative;
-    height: inherit;
-}
-
-.left-image{
+.left-image-signup{
     background-image: url("imgs/signup-cat.jpg");
     animation: fadeInAnimation ease 3s ;
     animation-iteration-count: 1; 
@@ -167,7 +73,6 @@ html {
 }
 
 .red-sign-up{
-    float: left;
     position: absolute;
     z-index: 1000;
     color: white;
@@ -177,12 +82,19 @@ html {
 
 #hello-friend{
     font-size: 80px;
-    color: white;
-    font-weight: bold;
-    font-family: lato;
 }
 
-.form-wrapper{
+.flex-container{
+    display: flex;
+}
+
+#sign-up-text{
+    font-weight: bold; 
+    font-size: 64pt; 
+    padding-left: 8px;
+}
+
+.form-wrapper-signup{
     padding-top: 32px;
     padding-left: 16px;
     padding-right: 16px;
@@ -198,6 +110,77 @@ html {
     margin-right: auto;
 }
 
-#feed-landing{
-    
+/* Log In */
+
+.left-image-login{
+    background-image: url("imgs/login-cat.jpg");
+    animation: fadeInAnimation ease 3s ;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100%;
+}
+
+.form-wrapper-login{
+    padding-top: 172px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+/* Cat Profile*/
+.container-cat{
+    padding-top: 120px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+}
+
+.cat-details{
+    list-style-type: none;
+    margin-top: 24px;
+    padding-left: 0px;
+}
+
+.cat-details li{
+    padding: 8px;
+    background-color: #ffcccc;
+    width: 296px;
+    margin: 5px;
+    border-left: 5px solid red;
+}
+
+hr{
+    height: 4px;
+    background-color: red;
+    border: none;
+}
+
+#cat-name-profile{
+    font-size: 56px;
+    font-weight: 200px;
+}
+
+#cat-short-description{
+    font-style: italic;
+    font-size: 18px;
+}
+
+.profile-mini-header{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#your-cat{
+    font-size: 18px;
+    text-align: justify;
+}
+
+#pusa-thoughts{
+    font-size: 18px;
+    text-align: justify;
 }
