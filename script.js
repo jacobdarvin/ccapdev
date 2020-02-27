@@ -18,7 +18,7 @@ switch(x) {
 //=========================================================================================
 
 function onSignupSubmitClick() {
-	var entryForms = document.getElementById("entry-forms");
+	var entryForms = document.getElementById("signup-forms");
 
 	if (!formsAreComplete()) {
         alert("Required fields!");
@@ -112,6 +112,43 @@ function formsAreComplete() {
     if(confirmPasswordForm.value == "") {
         isComplete = false;
         confirmPasswordForm.style.backgroundColor = "pink";
+    }
+
+    return isComplete;
+}
+
+//=========================================================================================
+// Login Logic
+//=========================================================================================
+
+function onLoginSubmitClick() {
+    var loginEntryForms = document.getElementById("login-forms");
+
+    if (!loginFormsAreComplete()) {
+        alert("Required fields!");
+        return;
+    }
+
+    loginEntryForms.submit();
+}
+
+function loginFormsAreComplete() {
+    var isComplete = true;
+
+	var loginUserNameForm = document.getElementById("login-username");
+	var loginPasswordForm = document.getElementById("login-password");
+	
+    loginUserNameForm.style.backgroundColor = "white";
+    loginPasswordForm.style.backgroundColor = "white";
+
+    if (loginUserNameForm.value == "") {
+        isComplete = false;
+        loginUserNameForm.style.backgroundColor = "pink";
+    }
+
+    if(loginPasswordForm.value == "") {
+        isComplete = false;
+        loginPasswordForm.style.backgroundColor = "pink";
     }
 
     return isComplete;
