@@ -48,6 +48,7 @@ a {
 .card {
     border: 0 !important;
     border-radius: 10px;
+    margin-bottom: 1px;
 }
 
 .col-sm{
@@ -224,10 +225,9 @@ hr{
 }
 
 .feed-container {
-    align-self: center;
     margin-top: 7em;
-    margin-right: 10em;
-    margin-left: 10em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Log In */
