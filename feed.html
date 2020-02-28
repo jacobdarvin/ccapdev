@@ -42,9 +42,9 @@
 
 </head>
 
-<body>
+<body style="background-color: #fafafa;">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="imgs/it.png" width="50px"> catvas</a>
+        <a class="navbar-brand" href="#"><img src="imgs/it.png" width="50px"> catvas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -54,8 +54,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item active">
-                    <a class="nav-link" href="#"><i class="fas fa-camera"></i> Cat Feed</a>
+                <li class="nav-item active dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-camera"></i> Catfeed
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
+                        <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-code"></i> Meet the Team</a>
@@ -67,9 +73,9 @@
                     <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true"> <i class="fas fa-box-open"></i> Schrödinger's Cat</a>
                 </li>
             </ul>
-            <ul class="navbar-nav ml-auto"> 
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-cat"></i> Login </a>
+                    <a class="nav-link" href="log-in.html"><i class="fas fa-cat"></i> Login </a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="sign-up.html"><i class="fas fa-paw"></i> Sign Up</a>
@@ -77,88 +83,82 @@
             </ul>
         </div>
     </nav>
-    
+
     <!-- Code Here -->
-
-    <section id="landing-feed">
-
-    </section>
-    
-    <section id="main" style="overflow-x: hidden;">
-        <div class="container-custom align-items-center">
-            <h1 class="m-4">Laguna Cats</h1>
-            <div class="row m-4">
-                <div class="col-sm mb-3">
-                    <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                        <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Housing</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm mb-3">
-                    <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                        <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Housing</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm mb-3">
-                    <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                        <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Housing</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm mb-3">
-                    <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                        <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Housing</h4>
-                        </div>
-                    </a>
-                </div>
+    <div class="feed-container align-items-center" style="max-width: 100em;">
+        <h1>Laguna Cats</h1>
+        <div class="row mb-3">
+            <div class="col">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Housing</h4>
+                    </div>
+                </a>
             </div>
-            <h1 class="m-4">Manila Cats</h1>
-            <div class="row m-4">
-                <div class="col-sm mb-3">
-                    <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                        <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Housing</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm mb-3">
-                    <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                        <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Housing</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm mb-3">
-                    <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                        <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Housing</h4>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm mb-3">
-                    <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                        <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
-                        <div class="card-body">
-                            <h4 class="card-title">Housing</h4>
-                        </div>
-                    </a>
-                </div>
+            <div class="col">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Housing</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Housing</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Housing</h4>
+                    </div>
+                </a>
             </div>
         </div>
-    </section>
-    
+        <h1>Manila Cats</h1>
+        <hr>
+        <div class="row">
+            <div class="col-sm">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Housing</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Housing</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Housing</h4>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="imgs/adopt.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">Housing</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <!-- Code Here -->
 
     <!-- Optional JavaScript -->
