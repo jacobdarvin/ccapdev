@@ -44,7 +44,7 @@
 
 <body style="background-color: #fafafa">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="imgs/it.png" width="50px"> catvas</a>
+        <a class="navbar-brand" href="index.html"><img src="imgs/it.png" width="50px"> catvas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,11 +56,11 @@
                 </li>
                 <li class="nav-item active dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-camera"></i> Catfeed
+                      <i class="fas fa-comments"></i> Catfeed
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
-                      <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
+                      <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> Catfeed</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -86,8 +86,29 @@
 
     <!-- Code Here -->
     <div class="feed-container align-items-center" style="max-width: 90em;">
+        <h1 style="font-size: 72pt; color: #d34b3b">Cat Feed</h1>
+        
         <div class="row">
             <div class="col-9">
+                <div class="card submission mb-3">
+                                        
+                    <div class="row">
+                        <div class="col-10">
+
+                            <input class="text-submission" type="text" id="submission" name="submission" placeholder="Create Post" style="width: 100%;">
+                            
+                        </div>
+                            
+                        <div class="col">
+
+                            <button type="button" class="btn btn-danger"><i class="fas fa-image"></i></button>
+                            <button type="button" class="btn btn-danger"><i class="fas fa-link"></i></button>
+
+                        </div>
+                    </div>
+                    
+                </div>
+                
                 <div class="card mb-3">
                     <div class="row no-gutters">
                         <div class="col-md-4">
@@ -167,11 +188,19 @@
             </div>
             <div class="col-3">
                 <div class="card mb-3">
-                  <img src="instadog.jpg" class="card-img-top" alt="...">
+                  <img src="imgs/goldi.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title-custom">Featured Cat of The Week #1</h5>
                     <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
-                    <p class="card-text"><small class="text-muted">Posted by justin.galura69</small></p>
+                    <p class="card-text"><small class="text-muted">Posted by michelle1</small></p>
+                  </div>
+                </div>
+                <div class="card mb-3">
+                  <img src="imgs/playful.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title-custom">Moderation Announcement Post #1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  </p>
+                    <p class="card-text"><small class="text-muted">Posted by michelle1</small></p>
                   </div>
                 </div>
             </div>

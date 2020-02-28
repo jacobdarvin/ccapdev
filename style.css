@@ -12,6 +12,22 @@ p {
     width: 20px;
 }
 
+.submission {
+    padding: 1em;
+}
+
+.text-submission {
+    padding: 6px;
+    border-radius: 12px;
+    border: 1px solid #c2c2c2;
+    background-color: #fafafa;
+}
+
+.text-submission:hover{
+    border: 1px solid #0074D9;
+    background-color: #ffffff;
+}
+
 .card-title {
     color: #d34b3b !important;
     font-weight: 700 !important;
