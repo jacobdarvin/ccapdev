@@ -155,7 +155,17 @@ nav {
 
 .btn-primary:active {
     background-color: grey !important;
-  }
+}
+
+.active-drop {
+    background-color: #e13f2b;
+    color: white;
+}
+
+.active-drop:hover {
+    background-color: #e13f2b;
+    color: white;
+}
 
 .container-main {
     margin: 10px;
