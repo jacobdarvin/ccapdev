@@ -60,6 +60,10 @@ a {
     margin-top: 6em;
 }
 
+.dropdown-item:focus {
+    background-color: #d34b3b !important;
+}
+
 
 .card {
     border: 0 !important;
