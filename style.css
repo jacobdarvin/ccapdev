@@ -67,6 +67,10 @@ a {
     margin-bottom: 1px;
 }
 
+.adoption {
+    padding: 10px;
+}
+
 .col-sm{
     padding: 0px !important;
     width: 35%;
