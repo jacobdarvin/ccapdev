@@ -319,3 +319,58 @@ hr{
     from { opacity: 0; }
     to   { opacity: 1; }
 }
+
+
+
+/* Cat Profile*/
+.container-cat{
+    padding-top: 120px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 48px;
+}
+
+.cat-details{
+    list-style-type: none;
+    margin-top: 24px;
+    padding-left: 0px;
+}
+
+.cat-details li{
+    padding: 8px;
+    background-color: #ffcccc;
+    width: 296px;
+    margin: 5px;
+    border-left: 5px solid red;
+}
+
+hr{
+    height: 4px;
+    background-color: red;
+    border: none;
+}
+
+#cat-name-profile{
+    font-size: 56px;
+    font-weight: 200px;
+}
+
+#cat-short-description{
+    font-style: italic;
+    font-size: 18px;
+}
+
+.profile-mini-header{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#your-cat{
+    font-size: 18px;
+    text-align: justify;
+}
+
+#pusa-thoughts{
+    font-size: 18px;
+    text-align: justify;
+}
