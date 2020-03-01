@@ -10,11 +10,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="hover.css">
     <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="hover.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="fav.ico/apple-icon-57x57.png">
@@ -38,11 +38,11 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7e6ab4004f.js" crossorigin="anonymous"></script>
 
-    <title>Catvas Feed</title>
+    <title>Catvas</title>
 
 </head>
 
-<body style="background-color: #fafafa;">
+<body style="background-color: #fafafa">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html"><img src="imgs/it.png" width="50px"> catvas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,11 +56,11 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-camera"></i> Explore
+                        <i class="fas fa-camera"></i> Explore
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item active-drop" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
-                      <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
+                        <a class="dropdown-item" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
+                        <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -84,82 +84,62 @@
         </div>
     </nav>
 
-    <!-- Code Here -->
-    <div class="feed-container align-items-center mb-5" style="max-width: 90em;">
-        <h1 style="font-size: 72pt; color: #d34b3b">Adopt a Cat</h1>
-        <h1>Laguna Cats</h1>
-        <div class="row mb-3">
-            <div class="col">
-                <a href="cat-profile-animo.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/sample.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Animo</h1>
+    <div class="container" style="margin-top: 6em; max-width: 85em;">
+        <div class = "row">
+            <div class = "col-5">
+            <div class="card mb-3" >
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="instadog.jpg" class="card-img" alt="...">
                     </div>
-                </a>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h2 class="card-title-custom">New Cat That I Found in DLSU</h2>
+                            <h5>by justin.galura</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </p>
+                            <hr> Liked by <b>michelle1</b>
+                            <hr>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col">
-                <a href="cat-profile-milky.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/playful.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Milky</h1>
-                    </div>
-                </a>
             </div>
+            
             <div class="col">
-                <a href="cat-profile-romeow.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/goldi.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Remeow</h1>
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="row h-100">
+                        <div class="col-10">
+
+                            <input class="text-submission" type="text" id="submission" name="submission" placeholder="Comment" style="width: 100%;">
+
+                        </div>
+
+                        <div class="col-2">
+                            <button type="button" class="btn btn-danger">Submit</button>
+                        </div>
                     </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="cat-profile-charlie.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/fat.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Charlie</h1>
-                    </div>
-                </a>
+                    <hr style="margin-top: 1em; margin-bottom: 1em;">
+                    <p class="comment">
+                        <b>darvin</b> So Cute! 😍 <small class="text-muted" style="float: right;"><a href = "#" class="like"><i class="fa fa-heart"></i></a> 191 likes</small>
+
+                    </p>
+                    <p class="comment">
+                        <b>justin.galura</b> ikr! <small class="text-muted" style="float: right;"><a href = "#" class="like"><i class="far fa-heart"></i></a> 20 likes</small>
+
+                    </p>
+                    <p class="comment">
+                        <b>sub_bot</b> excellent picture justin ! <small class="text-muted" style="float: right;"><a href = "#" class="like"><i class="fa fa-heart"></i></a> 14 likes</small>
+                    </p>
+                </div>
             </div>
         </div>
-        <h1>Manila Cats</h1>
-        <div class="row mb-3">
-            <div class="col">
-                <a href="cat-profile-menkai.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/sample.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Menkai</h1>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="cat-profile-twinkle.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/playful.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Twinkle</h1>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/goldi.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Juliet</h1>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="imgs/fat.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Foxtrot</h1>
-                    </div>
-                </a>
-            </div>
         </div>
     </div>
-
-    <!-- Code Here -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
