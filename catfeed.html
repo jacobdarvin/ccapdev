@@ -38,6 +38,10 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7e6ab4004f.js" crossorigin="anonymous"></script>
 
+    <!--Logic-->  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script> 
+
     <title>Catvas</title>
 
 </head>
@@ -95,14 +99,18 @@
                     <div class="row h-100">
                         <div class="col-10">
 
-                            <input class="text-submission" type="text" id="submission" name="submission" placeholder="Create Post" style="width: 100%; max-width: 100%;">
-                            
+                            <textarea class="text-submission" id="submission" name="submission" placeholder="Create Post" style="width: 100%; max-width: 100%;" rows="1"></textarea>
+                            <textarea class="text-submission" id="caption" name="caption" placeholder="Add Caption" style="width: 100%; max-width: 100%;" rows="2"></textarea>
                         </div>
                             
                         <div class="col-2">
-                                <button type="button" class="btn btn-danger"><i class="fas fa-image"></i></button>
-                                <button type="button" class="btn btn-danger"><i class="fas fa-link"></i></button>
+                                <input type="file" id="file" style="display:none;" />
+                                <button type="button" class="btn btn-danger"><i class="fas fa-image" id="upload-image-btn"></i></button>
+                                <button type="button" class="btn btn-danger" id="submit-submission-btn">Submit</button>
                         </div>
+                    </div>
+                    <div>
+                        <p id="message" class="message"></p>
                     </div>
                 </div>
                 
