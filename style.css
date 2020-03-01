@@ -344,12 +344,6 @@ hr{
     border-left: 5px solid red;
 }
 
-hr{
-    height: 4px;
-    background-color: red;
-    border: none;
-}
-
 #cat-name-profile{
     font-size: 56px;
     font-weight: 200px;
