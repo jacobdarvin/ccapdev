@@ -1,17 +1,3 @@
-var id = 113;
-var name;
-name = "Ned";
-
-var myVar = "global";
-
-function sample() {
-	var myVar = "local";
-}
-
-switch(x) {
-	case 1: document.write();
-	case 2: 
-}
 
 //=========================================================================================
 // Sign Up Logic
@@ -153,3 +139,41 @@ function loginFormsAreComplete() {
 
     return isComplete;
 }
+
+//=========================================================================================
+// Login Logic
+//=========================================================================================
+
+$(document).ready(function(){
+
+    $("#upload-image-btn").click(function() {
+        $("#file").click();
+    });
+
+    $("#submit-submission-btn").click(function() {
+    
+        var createPostField = document.getElementById("submission");
+        var captionField = document.getElementById("caption");
+        var message = document.getElementById("message");
+
+        message.innerText = "";
+        createPostField.style.backgroundColor = "#fafafa";
+
+        if (createPostField.value == "") {
+            message.innerText = "Please enter a post title and select an image to upload.";
+            createPostField.style.backgroundColor = "pink";
+            return;
+        }
+
+        if ($('#file').get(0).files.length === 0) {
+            message.innerText = "Please enter a post title and select an image to upload.";
+            return;
+        }
+
+        createPostField.value = "";
+        captionField.value = "";
+        $("#file")[0].reset();
+
+
+    });
+});

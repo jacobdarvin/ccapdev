@@ -346,7 +346,16 @@ hr{
     to   { opacity: 1; }
 }
 
+/* More Catfeed CSS */
 
+#caption:focus {
+    height: 200px;
+}
+
+.message {
+    padding-left: 6px;
+    color: #B00000;
+}
 
 /* Cat Profile*/
 .container-cat{
