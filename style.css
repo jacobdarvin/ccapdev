@@ -36,8 +36,17 @@ p {
 }
 
 .card-title-custom {
+    transition: 0.3s;
     font-family: Raleway !important;
     color: #d34b3b !important;
+    font-weight: 900 !important;
+    padding: 0;
+}
+
+.card-title-custom:hover {
+    transition: 0.3s;
+    font-family: Raleway !important;
+    color: #bf3422 !important;
     font-weight: 900 !important;
     padding: 0;
 }
@@ -146,6 +155,23 @@ nav {
     color: #e13f2b;
     background-color: white;
     border: 2px solid #e13f2b;
+}
+
+.like {
+    color: #e13f2b;
+}
+
+.like:hover {
+    color: #bf3422;
+}
+
+.image-feed:hover {
+    transition: 0.3s;
+    opacity: 0.7;
+}
+
+.image-feed{
+    transition: 0.3s;
 }
 
 .btn-primary:focus {
