@@ -9,12 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
-    <link rel="stylesheet" type="text/css" href="hover.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/hover.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="fav.ico/apple-icon-57x57.png">
@@ -38,13 +38,13 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7e6ab4004f.js" crossorigin="anonymous"></script>
 
-    <title>Menkai | Catvas</title>
+    <title>Catvas Feed</title>
 
 </head>
 
-<body>
+<body style="background-color: #fafafa;">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="../ccapdev/public/imgs/it.png" width="50px"> catvas</a>
+        <a class="navbar-brand" href="index.html"><img src="../public/imgs/it.png" width="50px"> catvas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -83,53 +83,82 @@
             </ul>
         </div>
     </nav>
-    
+
     <!-- Code Here -->
-    <div class="container-cat">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="../ccapdev/public/imgs/calico-cat.jpeg" width="400px">
-                <center>
-                <ul class="cat-details">
-                    <li id="adoption-status"><i class="fas fa-clipboard-check"></i>
-                        Available for adoption
-                    </li>
-                    <li id="cat-age"><i class="fas fa-history"></i>
-                        2 years old
-                    </li>
-                    <li id="cat-sex"><i class="fas fa-venus-mars"></i>
-                        Female
-                    </li>
-                </ul>
-                </center>
+    <div class="feed-container align-items-center mb-5" style="max-width: 90em;">
+        <h1 style="font-size: 72pt; color: #d34b3b">Adopt a Cat</h1>
+        <h1>Laguna Cats</h1>
+        <div class="row mb-3">
+            <div class="col">
+                <a href="cat-profile-animo.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs/sample.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">Animo</h1>
+                    </div>
+                </a>
             </div>
-            <div class="col-md-8">
-                <center>
-                <p id="cat-name-profile">MEOW, my name is Menkai!</p>
-                <p id="cat-short-description">Guard cat of Laguna Campus. Big chonk.</p>
-                </center>
-                <hr>
-                <p class="profile-mini-header">A brief description of your future cat by your future cat</p>
-                <p id="your-cat">"I might be t h i c c but that doesn't stop me from doing my duties
-                    of being the guard cat. Working here has its perks like sleeping whenever I want and
-                    getting free meals. I even get wet food as a bonus. I love pats so please don't stop
-                    patting me. I love you."
-                </p>
-                <p class="profile-mini-header">DLSU PUSA's thoughts</p>
-                <p id="pusa-thoughts"> 
-                    "Menkai tends to spend her time quietly near the entrance of the GT Building. She doesn't
-                    really mind being around other cats but she prefers it more when she is out and about doing her
-                    own thing. She will readily greet everyone who passes by and it would be nice if someone
-                    will adopt her because she will make sure she will shower her humans with love!"
-                    <br><br>
-                    "WHERE ARE YOUR BEBES?"
-                </p>
-                <center>
-                <button class="btn btn-outline-danger"><i class="fas fa-paw"></i> ADOPT ME!</button>
-                </center>
+            <div class="col">
+                <a href="cat-profile-milky.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs//playful.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">Milky</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="cat-profile-romeow.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs/goldi.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">Remeow</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="cat-profile-charlie.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs/fat.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">Charlie</h1>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h1>Manila Cats</h1>
+        <div class="row mb-3">
+            <div class="col">
+                <a href="cat-profile-menkai.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs/sample.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">Menkai</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="cat-profile-twinkle.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs/playful.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">Twinkle</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs/goldi.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">Juliet</h1>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs/fat.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">Foxtrot</h1>
+                    </div>
+                </a>
             </div>
         </div>
     </div>
+
     <!-- Code Here -->
 
     <!-- Optional JavaScript -->

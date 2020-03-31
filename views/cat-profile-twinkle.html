@@ -9,9 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
-    <link rel="stylesheet" type="text/css" href="hover.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/hover.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&display=swap" rel="stylesheet">
@@ -38,13 +38,13 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7e6ab4004f.js" crossorigin="anonymous"></script>
 
-    <title>Catvas</title>
+    <title>Twinkle | Catvas</title>
 
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="../ccapdev/public/../ccapdev/public/imgs/it.png" width="50px"> catvas</a>
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="../public/imgs/it.png" width="50px"> catvas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -59,12 +59,12 @@
                       <i class="fas fa-camera"></i> Explore
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
+                      <a class="dropdown-item active-drop" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
                       <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="fas fa-code"></i> Meet the Team</a>
+                    <a class="nav-link" href="404.html"><i class="fas fa-code"></i> Meet the Team</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="faq.html"><i class="fas fa-question"></i> FAQ</a>
@@ -84,11 +84,52 @@
         </div>
     </nav>
     
-    <div class="container" style="margin-top: 8%;">
-        <h1>Error 404 Page not Found</h1> <h5>this dev test was made on purpose if you clicked "meet the team"</h5>
-        <p>If you're seeing this we haven't worked on it yet. Or it's a joke item (schrodingers cat).</p>
-        - catvas team <i class="fas fa-paw"></i>
+    <!-- Code Here -->
+    <div class="container-cat">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../public/imgs/orange-catto.jpeg" width="400px">
+                <center>
+                <ul class="cat-details">
+                    <li id="adoption-status"><i class="fas fa-clipboard-check"></i>
+                        Available for adoption
+                    </li>
+                    <li id="cat-age"><i class="fas fa-history"></i>
+                        2 years old
+                    </li>
+                    <li id="cat-sex"><i class="fas fa-venus-mars"></i>
+                        Female
+                    </li>
+                </ul>
+                </center>
+            </div>
+            <div class="col-md-8">
+                <center>
+                <p id="cat-name-profile">MEOW, my name is Twinkle!</p>
+                <p id="cat-short-description">Future wrestler and Minci the 2nd. </p>
+                </center>
+                <hr>
+                <p class="profile-mini-header">A brief description of your future cat by your future cat</p>
+                <p id="your-cat">"I like to wrestle with my siblings a lot and cuddle with them during
+                    siesta hours. I often like to be around people but I am still a bit unsure if I will
+                    let them pet me. I prefer being near my mama and my siblings more although the prospect
+                    of a new home sounds nice!"
+                </p>
+                <p class="profile-mini-header">DLSU PUSA's thoughts</p>
+                <p id="pusa-thoughts"> 
+                    "Twinkle is probably the most social kitten among Ariel's litter. She is really chonky
+                    and likes to wrestle with her siblings. We felt like she will do really good in her 
+                    new home in the future."
+                    <br><br>
+                    "She looks like Minci as time passes by."
+                </p>
+                <center>
+                <button class="btn btn-outline-danger"><i class="fas fa-paw"></i> ADOPT ME!</button>
+                </center>
+            </div>
+        </div>
     </div>
+    <!-- Code Here -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

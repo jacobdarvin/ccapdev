@@ -114,7 +114,7 @@ nav {
     
     padding: 13rem;
    
-    background-image: url(imgs/bg-landing.jpg);
+    background-image: url(../imgs/bg-landing.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -127,7 +127,7 @@ nav {
     
     padding: 13rem;
    
-    background-image: url(imgs/bg-feed.jpg);
+    background-image: url(../imgs/bg-feed.jpg);
     background-color: #fafafa; 
     background-position: center;
     background-repeat: no-repeat;
@@ -221,7 +221,7 @@ html {
 }
 
 .left-image-signup{
-    background-image: url("imgs/signup-cat.jpg");
+    background-image: url("../imgs/signup-cat.jpg");
     animation-fill-mode: forwards; 
     background-size: cover;
     background-repeat: no-repeat;
@@ -293,7 +293,7 @@ hr{
 /* Log In */
 
 .left-image-login{
-    background-image: url("imgs/login-cat.jpg");
+    background-image: url("../imgs/login-cat.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     width: 50%;

@@ -9,9 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
-    <link rel="stylesheet" type="text/css" href="hover.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/hover.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&display=swap" rel="stylesheet">
@@ -42,9 +42,9 @@
 
 </head>
 
-<body style="background-color: #fafafa">
+<body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="../ccapdev/public/imgs/it.png" width="50px"> catvas</a>
+        <a class="navbar-brand" href="index.html"><img src="../public/imgs/it.png" width="50px"> catvas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,11 +56,11 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <i class="fas fa-camera"></i> Explore
+                      <i class="fas fa-camera"></i> Explore
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
-                        <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
+                      <a class="dropdown-item" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
+                      <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -84,62 +84,80 @@
         </div>
     </nav>
 
-    <div class="container" style="margin-top: 6em; max-width: 85em;">
-        <div class = "row">
-            <div class = "col-5">
-            <div class="card mb-3" >
-                <div class="row">
-                    <div class="col-md-12">
-                        <img src="instadog.jpg" class="card-img" alt="...">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
+    <section id="landing">
+    </section>
+
+    <section>
+
+        <div class="container mt-5 mb-5">
+            <h1 style="font-weight: bold; font-size: 56px; font-family: Raleway; font-weight:black; color: #d34b3b ">For all DLSU Cat Lovers!</h1>
+            <p class="mt-4" style="color: #54595f; font-size: 28pt; line-height: 48px;">
+                From meowting (liking) to purring (commenting). Cat hearting to sharing. Updates on your favorite DLSU cats. Catvas is here to help you all, and more.
+            </p>
+
+            <a class="mb-4" href="#" style="font-size: 28px;
+    font-weight: normal;
+    text-decoration: underline !important;
+    fill: #606060;
+    color: #606060;">Read our Story</a>
+        </div>
+
+    </section>
+
+    <section id="main" style="overflow-x: hidden;">
+        <div class="container-fluid align-items-center mt-5">
+            <div class="row" style="padding-right: 5em; padding-left: 5em">
+                <h2 class="mb-4">Your daily DLSU <span style="font-family: Raleway; font-weight: 900;">cat addiction</span> <br> Starts here,</h2>
+            </div>
+            <div class="row" style="padding-right: 5em; padding-left: 5em; padding-bottom: 5em;">
+                <div class="col-sm d-flex mb-3">
+                    <a href="feed.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                        <img class="card-img-top" src="../public/imgs/sample.jpg" alt="Card image cap">
                         <div class="card-body">
-                            <h2 class="card-title-custom">New Cat That I Found in DLSU</h2>
-                            <h5>by justin.galura</h5>
-                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </p>
-                            <hr> Liked by <b>michelle1</b>
-                            <hr>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            <h4 class="card-title">Adopt a Cat</h4>
+                            <p class="card-text">Looking to own a DLSU Cat? Find select a furry friend!</p>
                         </div>
-                    </div>
+                    </a>
                 </div>
-            </div>
-            </div>
-            
-            <div class="col">
-            <div class="card">
-                <div class="card-body">
-
-                    <div class="row h-100">
-                        <div class="col-10">
-
-                            <input class="text-submission" type="text" id="submission" name="submission" placeholder="Comment" style="width: 100%;">
-
+                <div class="col-sm d-flex mb-3">
+                    <a href="feed.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                        <img class="card-img-top" src="../public/imgs/fat.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Become a Godparent</h4>
+                            <p class="card-text">Godparent a cat, donate food and sponsor their well-being under <b>DLSU PUSA</b>'s care.</p>
                         </div>
-
-                        <div class="col-2">
-                            <button type="button" class="btn btn-danger">Submit</button>
+                    </a>
+                </div>
+                <div class="col-sm d-flex mb-3">
+                    <a href="feed.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                        <img class="card-img-top" src="../public/imgs/goldi.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Favorite Cats</h4>
+                            <p class="card-text">Got a favorite cat? You can save your favorite cats and view them at a later time. </p>
                         </div>
-                    </div>
-                    <hr style="margin-top: 1em; margin-bottom: 1em;">
-                    <p class="comment">
-                        <b>darvin</b> So Cute! 😍 <small class="text-muted" style="float: right;"><a href = "#" class="like"><i class="fa fa-heart"></i></a> 191 likes</small>
-
-                    </p>
-                    <p class="comment">
-                        <b>justin.galura</b> ikr! <small class="text-muted"> <a href="#"> Delete </a> <a href="#"> Edit </a> </small> <small class="text-muted" style="float: right;"><a href = "#" class="like"><i class="far fa-heart"></i></a> 20 likes</small>
-
-                    </p>
-                    <p class="comment">
-                        <b>sub_bot</b> excellent picture justin ! <small class="text-muted" style="float: right;"><a href = "#" class="like"><i class="fa fa-heart"></i></a> 14 likes</small>
-                    </p>
+                    </a>
+                </div>
+                <div class="col-sm d-flex mb-3">
+                    <a href="donate.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                        <img class="card-img-top" src="../public/imgs/playful.jpg" alt="Card image cap">
+                        <div class="card-body">
+                            <h4 class="card-title">Donate</h4>
+                            <p class="card-text"><b>Every. Piso. Helps.</b> Send love anytime, anywhere. Your donations will be used to feed our cats, server maintainance and will also be featured on our donations page</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="finish" style="overflow-x: hidden;">
+
+        <div class="container mt-5 " style="font-size: 72pt; color: white; font-weight: 900; font-family: raleway; line-height: 60pt;">Meow! You Ready?
+            <br> <a href="feed.html" style="font-size: 20pt; font-weight: 300; color: aliceblue; text-decoration: underline !important;">View DLSU cats →</a>
         </div>
-    </div>
+
+        <div class="container mb-4" style="color: white; font-family: raleway; line-height: 50px;">This website is created by Jacob Darvin, Justin Galura & Michelle Gelvoleo ©2020</div>
+    </section>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

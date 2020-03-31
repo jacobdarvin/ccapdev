@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
     <!-- Required meta tags -->
@@ -9,9 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
-    <link rel="stylesheet" type="text/css" href="hover.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/hover.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&display=swap" rel="stylesheet">
@@ -37,30 +37,29 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7e6ab4004f.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
 
-    <title>Catvas</title>
+    <title>Menkai | Catvas</title>
 
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="z-index: 1;">
-        <a class="navbar-brand" href="index.html"><img src="../ccapdev/public/imgs/it.png" width="50px"> catvas</a>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html"><img src="../public/imgs/it.png" width="50px"> catvas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown" style="z-index: 2;">
+                <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-camera"></i> Explore
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
+                      <a class="dropdown-item active-drop" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
                       <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
                     </div>
                 </li>
@@ -78,59 +77,61 @@
                 <li class="nav-item">
                     <a class="nav-link" href="log-in.html"><i class="fas fa-cat"></i> Login </a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="sign-up.html"><i class="fas fa-paw"></i> Sign Up</a>
                 </li>
             </ul>
         </div>
     </nav>
     
-    <div class="container-fluid float-right">
-        <div clas="row">
-            <div class="col col-6 d-sm-none d-md-block">
-                <div class="red-sign-up">
-                    <h1 id="hello-friend"><b>Hewwo, meow!</b></h1>
-                    <p>Already have an account?</p>
-                    <a href="log-in.html">
-                        <button type="button" class="btn btn-danger"><b>LOG-IN</b></button>
-                    </a>
-                </div>
+    <!-- Code Here -->
+    <div class="container-cat">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../public/imgs/calico-cat.jpeg" width="400px">
+                <center>
+                <ul class="cat-details">
+                    <li id="adoption-status"><i class="fas fa-clipboard-check"></i>
+                        Available for adoption
+                    </li>
+                    <li id="cat-age"><i class="fas fa-history"></i>
+                        2 years old
+                    </li>
+                    <li id="cat-sex"><i class="fas fa-venus-mars"></i>
+                        Female
+                    </li>
+                </ul>
+                </center>
             </div>
-            <div class="left-image-signup"></div>
-            <div class="col col-6 float-right form-wrapper-signup" style="margin-top: 4em;">
-                <div class="flex-container">
-                    <img src='../ccapdev/public/imgs/it.png' width="140px">
-                    <p id="sign-up-text">Sign-Up</p>
-                </div>
-                <form class="entry-forms" id="signup-forms">
-                    <div class="form-group">
-                        <label for="userName">User Name</label>
-                        <input type="userName" class="form-control" id="userName" placeholder="Enter User Name">
-                    </div>
-                    <div class="form-group">
-                        <label for="emailAddress">Email address</label>
-                        <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter E-mail Address">
-                        <small id="emailHelp" class="form-text text-muted">Your email will be kept private.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Enter Password">
-                        <small id="passwordHelp" class="form-text text-muted">Password should be at least 8 characters long with 1 number, 1 lowercase and uppercase letter.</small>
-                    </div>
-                    <div class="form-group">
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm Password">
-                    </div>
-                    <div class="form-group">
-                        <label for="description">Description</label>
-                        <textarea class="form-control" id="description" rows="3" placeholder="Give other users a short description of yourself!"></textarea>
-                    </div>
-                    <button type="button" class="btn btn-outline-danger" onclick="onSignupSubmitClick()"><b>S U B M I T</b></button>
-                </form>
+            <div class="col-md-8">
+                <center>
+                <p id="cat-name-profile">MEOW, my name is Menkai!</p>
+                <p id="cat-short-description">Guard cat of Laguna Campus. Big chonk.</p>
+                </center>
+                <hr>
+                <p class="profile-mini-header">A brief description of your future cat by your future cat</p>
+                <p id="your-cat">"I might be t h i c c but that doesn't stop me from doing my duties
+                    of being the guard cat. Working here has its perks like sleeping whenever I want and
+                    getting free meals. I even get wet food as a bonus. I love pats so please don't stop
+                    patting me. I love you."
+                </p>
+                <p class="profile-mini-header">DLSU PUSA's thoughts</p>
+                <p id="pusa-thoughts"> 
+                    "Menkai tends to spend her time quietly near the entrance of the GT Building. She doesn't
+                    really mind being around other cats but she prefers it more when she is out and about doing her
+                    own thing. She will readily greet everyone who passes by and it would be nice if someone
+                    will adopt her because she will make sure she will shower her humans with love!"
+                    <br><br>
+                    "WHERE ARE YOUR BEBES?"
+                </p>
+                <center>
+                <button class="btn btn-outline-danger"><i class="fas fa-paw"></i> ADOPT ME!</button>
+                </center>
             </div>
         </div>
     </div>
-    
+    <!-- Code Here -->
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

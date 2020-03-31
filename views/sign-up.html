@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
     <!-- Required meta tags -->
@@ -9,12 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="hover.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/../public/css/hover.css">
 
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&display=swap" rel="stylesheet">
 
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="fav.ico/apple-icon-57x57.png">
@@ -37,29 +37,30 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7e6ab4004f.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
-    <title>Catvas Feed</title>
+    <title>Catvas</title>
 
 </head>
 
-<body style="background-color: #fafafa;">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="../ccapdev/public/imgs/it.png" width="50px"> catvas</a>
+<body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style="z-index: 1;">
+        <a class="navbar-brand" href="index.html"><img src="../public/imgs/it.png" width="50px"> catvas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown" style="z-index: 2;">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       <i class="fas fa-camera"></i> Explore
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item active-drop" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
+                      <a class="dropdown-item" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
                       <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
                     </div>
                 </li>
@@ -77,90 +78,59 @@
                 <li class="nav-item">
                     <a class="nav-link" href="log-in.html"><i class="fas fa-cat"></i> Login </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="sign-up.html"><i class="fas fa-paw"></i> Sign Up</a>
                 </li>
             </ul>
         </div>
     </nav>
-
-    <!-- Code Here -->
-    <div class="feed-container align-items-center mb-5" style="max-width: 90em;">
-        <h1 style="font-size: 72pt; color: #d34b3b">Adopt a Cat</h1>
-        <h1>Laguna Cats</h1>
-        <div class="row mb-3">
-            <div class="col">
-                <a href="cat-profile-animo.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="../ccapdev/public/imgs/sample.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Animo</h1>
-                    </div>
-                </a>
+    
+    <div class="container-fluid float-right">
+        <div clas="row">
+            <div class="col col-6 d-sm-none d-md-block">
+                <div class="red-sign-up">
+                    <h1 id="hello-friend"><b>Hewwo, meow!</b></h1>
+                    <p>Already have an account?</p>
+                    <a href="log-in.html">
+                        <button type="button" class="btn btn-danger"><b>LOG-IN</b></button>
+                    </a>
+                </div>
             </div>
-            <div class="col">
-                <a href="cat-profile-milky.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="../ccapdev/public/imgs//playful.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Milky</h1>
+            <div class="left-image-signup"></div>
+            <div class="col col-6 float-right form-wrapper-signup" style="margin-top: 4em;">
+                <div class="flex-container">
+                    <img src='../public/imgs/it.png' width="140px">
+                    <p id="sign-up-text">Sign-Up</p>
+                </div>
+                <form class="entry-forms" id="signup-forms">
+                    <div class="form-group">
+                        <label for="userName">User Name</label>
+                        <input type="userName" class="form-control" id="userName" placeholder="Enter User Name">
                     </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="cat-profile-romeow.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="../ccapdev/public/imgs/goldi.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Remeow</h1>
+                    <div class="form-group">
+                        <label for="emailAddress">Email address</label>
+                        <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Enter E-mail Address">
+                        <small id="emailHelp" class="form-text text-muted">Your email will be kept private.</small>
                     </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="cat-profile-charlie.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="../ccapdev/public/imgs/fat.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Charlie</h1>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter Password">
+                        <small id="passwordHelp" class="form-text text-muted">Password should be at least 8 characters long with 1 number, 1 lowercase and uppercase letter.</small>
                     </div>
-                </a>
-            </div>
-        </div>
-        <h1>Manila Cats</h1>
-        <div class="row mb-3">
-            <div class="col">
-                <a href="cat-profile-menkai.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="../ccapdev/public/imgs/sample.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Menkai</h1>
+                    <div class="form-group">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <input type="confirmPassword" class="form-control" id="confirmPassword" placeholder="Confirm Password">
                     </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="cat-profile-twinkle.html" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="../ccapdev/public/imgs/playful.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Twinkle</h1>
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <textarea class="form-control" id="description" rows="3" placeholder="Give other users a short description of yourself!"></textarea>
                     </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="../ccapdev/public/imgs/goldi.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Juliet</h1>
-                    </div>
-                </a>
-            </div>
-            <div class="col">
-                <a href="#" class="card hvr-grow-shadow" style="width: 18rem;">
-                    <img class="card-img-top" src="../ccapdev/public/imgs/fat.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h1 class="card-title">Foxtrot</h1>
-                    </div>
-                </a>
+                    <button type="button" class="btn btn-outline-danger" onclick="onSignupSubmitClick()"><b>S U B M I T</b></button>
+                </form>
             </div>
         </div>
     </div>
-
-    <!-- Code Here -->
-
+    
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

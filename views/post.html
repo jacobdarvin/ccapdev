@@ -9,9 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="animate.css">
-    <link rel="stylesheet" type="text/css" href="hover.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/hover.css">
 
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,900&display=swap" rel="stylesheet">
@@ -38,13 +38,13 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/7e6ab4004f.js" crossorigin="anonymous"></script>
 
-    <title>Romeow | Catvas</title>
+    <title>Catvas</title>
 
 </head>
 
-<body>
+<body style="background-color: #fafafa">
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="index.html"><img src="../ccapdev/public/imgs/it.png" width="50px"> catvas</a>
+        <a class="navbar-brand" href="index.html"><img src="../public/imgs/it.png" width="50px"> catvas</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -56,11 +56,11 @@
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      <i class="fas fa-camera"></i> Explore
+                        <i class="fas fa-camera"></i> Explore
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <a class="dropdown-item active-drop" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
-                      <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
+                        <a class="dropdown-item" href="feed.html"><i class="fas fa-heart"></i> Adopt a Cat</a>
+                        <a class="dropdown-item" href="catfeed.html"><i class="fas fa-comments"></i> View Catfeed</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -83,54 +83,63 @@
             </ul>
         </div>
     </nav>
-    
-    <!-- Code Here -->
-    <div class="container-cat">
-        <div class="row">
-            <div class="col-md-4">
-                <img src="../ccapdev/public/imgs/white-kitty.jpeg" width="400px">
-                <center>
-                <ul class="cat-details">
-                    <li id="adoption-status"><i class="fas fa-clipboard-check"></i>
-                        Available for adoption
-                    </li>
-                    <li id="cat-age"><i class="fas fa-history"></i>
-                        3 years old
-                    </li>
-                    <li id="cat-sex"><i class="fas fa-venus-mars"></i>
-                        Male
-                    </li>
-                </ul>
-                </center>
+
+    <div class="container" style="margin-top: 6em; max-width: 85em;">
+        <div class = "row">
+            <div class = "col-5">
+            <div class="card mb-3" >
+                <div class="row">
+                    <div class="col-md-12">
+                        <img src="instadog.jpg" class="card-img" alt="...">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card-body">
+                            <h2 class="card-title-custom">New Cat That I Found in DLSU</h2>
+                            <h5>by justin.galura</h5>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </p>
+                            <hr> Liked by <b>michelle1</b>
+                            <hr>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-8">
-                <center>
-                <p id="cat-name-profile">MEOW, my name is Romeow!</p>
-                <p id="cat-short-description">Romeow is an orange cat located near the SJ Walk. A very handsome big boi.</p>
-                </center>
-                <hr>
-                <p class="profile-mini-header">A brief description of your future cat by your future cat</p>
-                <p id="your-cat">"Hello! My name is Romeow and I have been to DLSU for quite a long 
-                    time. I like Mooncake a lot (Although she never notices me..) and taking long naps.
-                    I am really good with kittens and they often call me Uncle Romeow. I am happy
-                    seeing them to their furever home but I will also love to go to a furever home as well!"
-                </p>
-                <p class="profile-mini-header">DLSU PUSA's thoughts</p>
-                <p id="pusa-thoughts"> 
-                    "Romeow is a very sweet cat. If you are looking for a cat that will love you and
-                    look at you like you are the love of his life, then Romeow is the cat you are 
-                    looking for. He is a big cat with a big heart. We hope you will consider adopting this
-                    good boi and welcome him in your own home!" 
-                    <br><br>
-                    "Romeow helped me cure my depression."
-                </p>
-                <center>
-                <button class="btn btn-outline-danger"><i class="fas fa-paw"></i> ADOPT ME!</button>
-                </center>
+            </div>
+            
+            <div class="col">
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="row h-100">
+                        <div class="col-10">
+
+                            <input class="text-submission" type="text" id="submission" name="submission" placeholder="Comment" style="width: 100%;">
+
+                        </div>
+
+                        <div class="col-2">
+                            <button type="button" class="btn btn-danger">Submit</button>
+                        </div>
+                    </div>
+                    <hr style="margin-top: 1em; margin-bottom: 1em;">
+                    <p class="comment">
+                        <b>darvin</b> So Cute! 😍 <small class="text-muted" style="float: right;"><a href = "#" class="like"><i class="fa fa-heart"></i></a> 191 likes</small>
+
+                    </p>
+                    <p class="comment">
+                        <b>justin.galura</b> ikr! <small class="text-muted"> <a href="#"> Delete </a> <a href="#"> Edit </a> </small> <small class="text-muted" style="float: right;"><a href = "#" class="like"><i class="far fa-heart"></i></a> 20 likes</small>
+
+                    </p>
+                    <p class="comment">
+                        <b>sub_bot</b> excellent picture justin ! <small class="text-muted" style="float: right;"><a href = "#" class="like"><i class="fa fa-heart"></i></a> 14 likes</small>
+                    </p>
+                </div>
             </div>
         </div>
+        </div>
     </div>
-    <!-- Code Here -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
