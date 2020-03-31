@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
     //=========================================================================================
@@ -6,7 +7,7 @@ $(document).ready(function(){
 
     $("#login-btn").click(function() {
         var loginEntryForms = document.getElementById("login-forms");
-        
+
         if (!loginFormsAreComplete()) {
             alert("Required fields!");
             return;
