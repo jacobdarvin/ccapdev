@@ -114,7 +114,7 @@ nav {
     
     padding: 13rem;
    
-    background-image: url(../imgs/bg-landing.jpg);
+    background-image: url("../imgs/bg-landing.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -127,7 +127,7 @@ nav {
     
     padding: 13rem;
    
-    background-image: url(../imgs/bg-feed.jpg);
+    background-image: url("../imgs/bg-feed.jpg");
     background-color: #fafafa; 
     background-position: center;
     background-repeat: no-repeat;
