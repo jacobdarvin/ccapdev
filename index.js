@@ -39,6 +39,18 @@ app.get('/', function(req, res){
     })  
 });
 
+app.get('/feed', function(req, res){
+    res.render('feed', {
+    	title: 'Cats',
+    })  
+});
+//TO DO, DO CATFEED
+app.get('/cat-feed', function(req, res){
+    res.render('feed', {
+    	title: 'Cat Feed',
+    })  
+});
+
 //Files
 app.get('/sign-up', function(req, res){
     res.sendFile('views/sign-up.html', {root: __dirname});
