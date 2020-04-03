@@ -334,6 +334,9 @@ hr{
     list-style-type: none;
     margin-top: 24px;
     padding-left: 0px;
+    text-align: center;
+    margin-left: 48px;
+    margin-right: 48px;
 }
 
 .cat-details li{
@@ -374,3 +377,13 @@ hr{
     font-size: 18px;
     text-align: justify;
 }
+
+/* User Profile */
+.center{
+    text-align: center;
+}
+
+#your-desc{
+    margin: 24px;
+}
+
