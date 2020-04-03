@@ -1,22 +1,45 @@
+//Imports
 const express = require('express');
-const hbs = require('hbs');
+const path = require('path');
+const exphbs = require('express-handlebars');
+const handlebars = require('handlebars');
+
+//Application Init
+const app = express();
 const port = 9090;
 
-const app = express();
-
+//HBS Init
 app.set('view engine', 'hbs');
 
-/*For testing*/
+//Engine Init
+app.engine('hbs', exphbs({
+	extname: 'hbs',
+	defaultView: 'main',
+	layoutsDir: path.join(__dirname, '/views/layouts'),
+	partialsDir: path.join(__dirname, 'views/partials'),
+
+	//Helpers
+	helpers: {
+		cap: function(text) { return text.toUpperCase(); },
+		em: function(text) {
+			var x = `<em>${text}</em>`;
+
+			return new handlebars.SafeString(x);
+		}
+	}
+}));
+
+//HBS Init
+app.set('view engine', 'hbs');
+
+//Home Route
 app.get('/', function(req, res){
-    res.send("Hello World");    
-})
+    res.render('index', {
+    	title: 'Home',
+    })  
+});
 
-app.listen(port, function(){
-    console.log("Listening at port " + port);
-})
-
-app.use(express.static(__dirname));
-
+//Files
 app.get('/sign-up', function(req, res){
     res.sendFile('views/sign-up.html', {root: __dirname});
 });
@@ -34,3 +57,11 @@ app.get('cat/catName', function(req, res){
     var catName = req.params.username;
     res.sendFile('views/cat-profile.html', {root: __dirname});
 });
+
+//Show Port
+app.listen(port, function(){
+    console.log("Listening at port " + port);
+})
+
+//Static URL
+app.use(express.static(__dirname));
