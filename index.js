@@ -14,3 +14,13 @@ app.get('/', function(req, res){
 app.listen(port, function(){
     console.log("Listening at port " + port);
 })
+
+app.use(express.static(__dirname));
+
+app.get('/sign-up', function(req, res){
+    res.sendFile('views/sign-up.html', {root: __dirname});
+});
+
+app.get('/log-in', function(req, res){
+    res.sendFile('views/log-in.html', {root: __dirname});
+});
