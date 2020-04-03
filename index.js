@@ -24,3 +24,13 @@ app.get('/sign-up', function(req, res){
 app.get('/log-in', function(req, res){
     res.sendFile('views/log-in.html', {root: __dirname});
 });
+
+app.get('/user/userName', function(req, res){
+    var userName = req.params.username;
+    res.sendFile('views/user-profile.html', {root: __dirname});
+});
+
+app.get('cat/catName', function(req, res){
+    var catName = req.params.username;
+    res.sendFile('views/cat-profile.html', {root: __dirname});
+});
