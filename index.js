@@ -46,7 +46,7 @@ app.get('/feed', function(req, res){
 });
 //TO DO, DO CATFEED
 app.get('/cat-feed', function(req, res){
-    res.render('feed', {
+    res.render('cat-feed', {
     	title: 'Cat Feed',
     })  
 });
