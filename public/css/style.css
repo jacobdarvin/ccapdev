@@ -404,3 +404,20 @@ hr{
     font-size: 18px;
     text-align: justify;
 }
+
+.center-wrapper{
+    text-align: center;
+}
+
+.center-wrapper img, ul li{
+    display: inline-block;
+}
+
+.center-wrapper p{
+    display: inline-block;
+}
+
+.center-wrapper button{
+    display: inline-block;
+}
+
