@@ -48,6 +48,33 @@ app.get('/feed', function(req, res){
 app.get('/cat-feed', function(req, res){
     res.render('cat-feed', {
     	title: 'Cat Feed',
+
+        post: [
+            {
+                post_title: 'Post Sample #1',
+                post_author: 'sampleauthor', 
+                post_content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+                post_latest_liked: 'samplelatestlikeduser',
+                post_user: 'sampleotheruser',
+                post_user_comment: 'Looks Good to Me! (LGTM!)',
+                time: '3 mins',
+            },
+            {
+                post_title: 'Post Sample #2',
+                post_author: 'sampleauthor2', 
+                post_content: 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.',
+                post_latest_liked: 'samplelatestlikeduser2',
+                post_user: 'sampleotheruser2',
+                post_user_comment: 'Looks HORRIBLE to Me! (LHTM!)',
+                time: '6 mins',
+            },
+        ]
+    })  
+});
+//DONATE FEED
+app.get('/donate', function(req, res){
+    res.render('donate', {
+        title: 'Donate',
     })  
 });
 

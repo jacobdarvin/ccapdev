@@ -3,6 +3,9 @@
         
         <div class="row">
             <div class="col-9">
+
+                <!-- Submission Box -->
+
                 <div class="card submission mb-3">
                                         
                     <div class="row h-100">
@@ -24,7 +27,11 @@
                         <p id="message" class="message"></p>
                     </div>
                 </div>
-                
+
+                <!-- Submission Box -->
+
+                <!-- Posts -->
+                {{#each post}}
                 <div class="card mb-3">
                     <div class="row no-gutters">
                         <div class="col-md-4">
@@ -32,14 +39,14 @@
                         </div>
                         <div class="col-md-8">
                             <div class="card-body">
-                                <a href="post.html"><h2 class="card-title-custom">New Cat That I Found in DLSU</h2></a>
-                                <h5>by justin.galura</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </p>
-                                <hr> Liked by <b>michelle1</b>
+                                <a href="post.html"><h2 class="card-title-custom">{{this.post_title}}</h2></a>
+                                <h5>by {{this.post_author}}</h5>
+                                <p class="card-text">{{this.post_content}} </p>
+                                <hr> Liked by <b>{{this.post_latest_liked}}</b>
                                 <hr>
-                                <p class="card-text"><b>darvin</b> So Cute! 😍</p>
+                                <p class="card-text"><b>{{this.post_user}}</b>{{this.post_user_comment}}</p>
                                 <a href="post.html">View Comments 93</a>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small>
+                                <p class="card-text"><small class="text-muted">Last updated {{this.time}} ago</small>
                                 </p>
                                 <div class="text-muted small" style="text-align: right;">
                                 <a href="#">Delete</a> <a href="#">Edit</i></a>
@@ -48,65 +55,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <a href = "post.html"><img src="../public/imgs/instadog.jpg" class="card-img image-feed" alt="..."></a>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <a href="post.html"><h2 class="card-title-custom">New Cat That I Found in DLSU</h2></a>
-                                <h5>by justin.galura</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </p>
-                                <hr> Liked by <b>michelle1</b>
-                                <hr>
-                                <p class="card-text"><b>darvin</b> So Cute! 😍</p>
-                                <a href="post.html">View Comments 93</a>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <a href = "post.html"><img src="../public/imgs/instadog.jpg" class="card-img image-feed" alt="..."></a>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <a href="post.html"><h2 class="card-title-custom">New Cat That I Found in DLSU</h2></a>
-                                <h5>by justin.galura</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </p>
-                                <hr> Liked by <b>michelle1</b>
-                                <hr>
-                                <p class="card-text"><b>darvin</b> So Cute! 😍</p>
-                                <a href="post.html">View Comments 93</a>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3">
-                    <div class="row no-gutters">
-                        <div class="col-md-4">
-                            <a href = "post.html"><img src="../public/imgs/instadog.jpg" class="card-img image-feed" alt="..."></a>
-                        </div>
-                        <div class="col-md-8">
-                            <div class="card-body">
-                                <a href="post.html"><h2 class="card-title-custom">New Cat That I Found in DLSU</h2></a>
-                                <h5>by justin.galura</h5>
-                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat... </p>
-                                <hr> Liked by <b>michelle1</b>
-                                <hr>
-                                <p class="card-text"><b>darvin</b> So Cute! 😍</p>
-                                <a href="post.html">View Comments 93</a>
-                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                {{/each}}
+
+                <!-- Posts -->
+
             </div>
+
+            <!-- Featured Posts -->
+
             <div class="col-3">
+
                 <div class="card mb-3">
                   <img src="../public/imgs/goldi.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -115,6 +73,7 @@
                     <p class="card-text"><small class="text-muted">Posted by michelle1</small></p>
                   </div>
                 </div>
+
                 <div class="card mb-3">
                   <img src="../public/imgs/playful.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
@@ -123,6 +82,7 @@
                     <p class="card-text"><small class="text-muted">Posted by michelle1</small></p>
                   </div>
                 </div>
+
             </div>
         </div>
     </div>
