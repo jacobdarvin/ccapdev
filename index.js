@@ -42,6 +42,24 @@ app.get('/', function(req, res){
 app.get('/feed', function(req, res){
     res.render('feed', {
     	title: 'Cats',
+
+        manila: [
+            {
+                manila_cat: 'MCat#1',
+            },
+            {
+                manila_cat: 'MCat#2',
+            },
+        ],
+
+        laguna: [
+            {
+                laguna_cat: 'LCat#1',
+            },
+            {
+                laguna_cat: 'LCat#2',
+            },
+        ],
     })  
 });
 //TO DO, DO CATFEED
