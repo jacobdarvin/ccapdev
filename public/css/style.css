@@ -78,6 +78,7 @@ a {
     border: 0 !important;
     border-radius: 10px;
     margin-bottom: 1px;
+    box-shadow: 0px 0px 15px -4px rgba(0,0,0,0.10);
 }
 
 .adoption {
@@ -403,3 +404,20 @@ hr{
     font-size: 18px;
     text-align: justify;
 }
+
+.center-wrapper{
+    text-align: center;
+}
+
+.center-wrapper img, ul li{
+    display: inline-block;
+}
+
+.center-wrapper p{
+    display: inline-block;
+}
+
+.center-wrapper button{
+    display: inline-block;
+}
+

@@ -1,0 +1,88 @@
+    <div class="feed-container align-items-center" style="max-width: 90em;">
+        <h1 style="font-size: 72pt; color: #d34b3b">Cat Feed</h1>
+        
+        <div class="row">
+            <div class="col-9">
+
+                <!-- Submission Box -->
+
+                <div class="card submission mb-3">
+                                        
+                    <div class="row h-100">
+                        <div class="col-10">
+
+                            <textarea class="text-submission" id="submission" name="submission" placeholder="Create Post" style="width: 100%; max-width: 100%;" rows="1"></textarea>
+                            <textarea class="text-submission" id="caption" name="caption" placeholder="Add Caption" style="width: 100%; max-width: 100%;" rows="2"></textarea>
+                        </div>
+                            
+                        <div class="col-2">
+
+                                <input type="file" id="file" style="display:none;" />
+                                <button type="button" class="btn btn-danger"><i class="fas fa-image" id="upload-image-btn"></i></button>
+                                <button type="button" class="btn btn-danger" id="submit-submission-btn">Submit</button>
+                          
+                        </div>
+                    </div>
+                    <div>
+                        <p id="message" class="message"></p>
+                    </div>
+                </div>
+
+                <!-- Submission Box -->
+
+                <!-- Posts -->
+                {{#each post}}
+                <div class="card mb-3">
+                    <div class="row no-gutters">
+                        <div class="col-md-4">
+                            <a href = "post.html"><img src="../public/imgs/instadog.jpg" class="card-img image-feed" alt="..."></a>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <a href="post.html"><h2 class="card-title-custom">{{this.post_title}}</h2></a>
+                                <h5>by {{this.post_author}}</h5>
+                                <p class="card-text">{{this.post_content}} </p>
+                                <hr> Liked by <b>{{this.post_latest_liked}}</b>
+                                <hr>
+                                <p class="card-text"><b>{{this.post_user}}</b>{{this.post_user_comment}}</p>
+                                <a href="post.html">View Comments 93</a>
+                                <p class="card-text"><small class="text-muted">Last updated {{this.time}} ago</small>
+                                </p>
+                                <div class="text-muted small" style="text-align: right;">
+                                <a href="#">Delete</a> <a href="#">Edit</i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+
+                <!-- Posts -->
+
+            </div>
+
+            <!-- Featured Posts -->
+
+            <div class="col-3">
+
+                <div class="card mb-3">
+                  <img src="../public/imgs/goldi.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title-custom">Featured Cat of The Week #1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                    <p class="card-text"><small class="text-muted">Posted by michelle1</small></p>
+                  </div>
+                </div>
+
+                <div class="card mb-3">
+                  <img src="../public/imgs/playful.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title-custom">Moderation Announcement Post #1</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.  </p>
+                    <p class="card-text"><small class="text-muted">Posted by michelle1</small></p>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </div>

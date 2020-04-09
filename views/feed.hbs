@@ -1,0 +1,33 @@
+<!-- Code Here -->
+<div class="feed-container align-items-center mb-5" style="max-width: 90em;">
+        <h1 style="font-size: 72pt; color: #d34b3b">Adopt a Cat</h1>
+        <h1>Laguna Cats</h1>
+
+        <div class="row mb-3">
+            {{#each laguna}}
+            <div class="col">
+                <a href="cat-profile-animo.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs/sample.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">{{this.laguna_cat}}</h1>
+                    </div>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+
+        <h1>Manila Cats</h1>
+
+        <div class="row mb-3">
+            {{#each manila}}
+            <div class="col">
+                <a href="cat-profile-menkai.html" class="card hvr-grow-shadow" style="width: 18rem;">
+                    <img class="card-img-top" src="../public/imgs/sample.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h1 class="card-title">{{this.manila_cat}}</h1>
+                    </div>
+                </a>
+            </div>
+            {{/each}}
+        </div>        
+</div>
