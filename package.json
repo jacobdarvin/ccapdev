@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Darvvvin/ccapdev#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^4.0.2",
     "hbs": "^4.1.0",
     "mongodb": "^3.5.5",
